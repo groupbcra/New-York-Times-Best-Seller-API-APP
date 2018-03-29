@@ -1,21 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/app.js"></script>
+
+<head>
+  <title>NY Times APP</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="pb-5">
+  <header id="bro">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center py-4 mb-3 bg-secondary text-white">
+          <h1>
+            <i class="fa fa-newspaper"></i> NEW TIMES YORK KILLER APP BRO!</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 px-0">
+          <div class="card">
+            <h5 class="card-header bg-secondary text-white">
+              <i class="fa fa-newspaper"></i>Search Parameters</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="inputST">Search Terms</label>
+                  <input type="text" class="form-control" id="searchTerm" placeholder="Ex: Obama and Chipmunks">
+                </div>
+                <div class="form-group">
+                  <label for="inputRcrd">Number of Records To Retrieve</label>
+                  <input type="text" class="form-control" id="inputRcrd" placeholder="4">
+                </div>
+                <div class="form-group">
+                  <label for="inputYr">Start Year</label>
+                  <input type="text" class="form-control" id="inputYr" placeholder="1989">
+                </div>
+                <div class="form-group">
+                  <label for="inputEnYr">End Year</label>
+                  <input type="text" class="form-control" id="inputEnYr" placeholder="">
+                </div>
+
+                <button id="submit" type="submit" class="btn btn-primary bg-secondary border-secondary">Search</button>
+                <button id="clear" type="submit" class="btn btn-primary bg-secondary border-secondary">Clear Results</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="result" class="mt-5" >
+    <div class="container">
+      <div class="row">
+        <div class="col-12 px-0">
+
+            <div class="card">
+                <h5 class="card-header bg-secondary text-white">
+                  <i class="fa fa-newspaper"></i>Search Results</h5>
+                <div class="card-body">
+                    <div class="card">
+                    <div class="card-body">
+                      <h2 class="card-title">Post Title</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                      <a href="#" class="btn btn-primary bg-secondary border-secondary">Read More →</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                      Posted on January 1, 2017 by
+                      <a href="#">Start Bootstrap</a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="card-body">
+                      <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">Post Title</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                        <a href="#" class="btn btn-primary bg-secondary border-secondary">Read More →</a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        Posted on January 1, 2017 by
+                        <a href="#">Start Bootstrap</a>
+                      </div>
+                    </div>
+                    </div>
+  
+
+
+
+
+
+
+                  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>
